@@ -16,7 +16,7 @@ I wanted to build a system that does the boring work for me. But during developm
 It's a multi-agent system that writes perfect Google Ads campaigns. It reads a website, figures out the strategy, writes the ads, and then **checks itself** to make sure everything is compliant.
 
 **The Cool Part (Hybrid Architecture):**
-The system tries to use Google Vertex AI (Cloud) first. But if the cloud is unreachable or errors out, it doesn't crash. It automatically switches to a **Local Agent** running on my machine. Zero downtime.
+The system tries to use Google Vertex AI (Cloud) first. But if the cloud is unreachable or errors out, it doesn't crash. It automatically switches to a **Local Agent** running on my machine. Zero downtime. Current SDK Limitations Bypass: Implements a custom failover to handle ReasoningEngine instabilities experienced during high-load scenarios.
 
 ### Key Features
 *   **🔄 "Cloud-to-Local" Switch:** The script detects cloud errors and instantly switches to local processing. It just works.
