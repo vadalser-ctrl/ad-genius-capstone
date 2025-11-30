@@ -1,0 +1,9 @@
+google-adk>=0.4.0
+google-cloud-aiplatform
+google-genai
+requests
+beautifulsoup4
+pypdf
+tenacity
+python-dotenv
+pandas
